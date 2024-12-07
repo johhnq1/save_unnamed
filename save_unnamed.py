@@ -66,7 +66,7 @@ def get_extension(view):
 
 
 def assign_file_name_to_view(view, folder):
-    date = datetime.now().strftime("%Y-%m-%d_%H%M%S")
+    date = datetime.now().strftime("%Y-%m-%d")
     name = sanitize(view.name()) or get_first_line_with_text(view) or "(empty)"
     extension = ".md"
     # extension = get_extension(view) or ""
